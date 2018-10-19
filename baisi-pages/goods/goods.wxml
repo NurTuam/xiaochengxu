@@ -1,2 +1,12 @@
-<!--baisi-pages/goods/goods.wxml-->
-<text>baisi-pages/goods/goods.wxml</text>
+<import src="../common/goodsLeft/goodleft.wxml" />
+<import src="../common/goodsRight/goodright.wxml" />
+<scroll-view scroll-y="{{true}}" class='tab left'>
+<block>
+<template is="goodleft_Template" data="{{leftList:leftList}}"/>
+</block>
+</scroll-view>
+<scroll-view scroll-y="{{true}}" class='tab right'>
+<block>
+<template is="goodright_Template" data="{{rightList:rightList}}"/>
+</block>
+</scroll-view>

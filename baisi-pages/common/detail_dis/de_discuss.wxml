@@ -1,7 +1,6 @@
 <template name="detail_template">
 <view class='common_li'>
 <!-- 第一 -->
-  <text class='hot_discuss'>最热评论</text>
   <view class='discuss_content'>
   <view class='user'>
   <image src='{{item.user.profile_image}}' class='userimg'></image>

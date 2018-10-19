@@ -1,0 +1,6 @@
+<template name="goodleft_Template">
+<view bindtap='leftTabTap' wx:for="{{leftList}}" wx:key="{{index}}" data-id='{{item.id}}' class='left_cell {{item.selected?"left_cell_selected":""}}'>
+<view class='left_arrow'></view>
+<text class='item_title'>{{item.name}}</text>
+</view>
+</template>

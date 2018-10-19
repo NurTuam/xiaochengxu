@@ -44,10 +44,18 @@ Page({
         that.setData({
           slider: res.data.data.slider
         })
+      },
+      complete:function(){
+        wx.hideLoading()
       }
     });
     //请求全部类型数据
     this.requestBS(this.data.currentType)
+  },
+  refreshNewData:function(){
+      wx.showLoading({
+        title: '请稍后'
+      });
   },
   swiperTap:function(e){
     getApp().linkUrl=e.target.dataset.link;

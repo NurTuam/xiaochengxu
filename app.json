@@ -1,15 +1,17 @@
 {
   "pages": [
+    "baisi-pages/goods/goods",
+    "baisi-pages/mes/me",
     "baisi-pages/index/index",
     "baisi-pages/welcome/welcome",
     "baisi-pages/attentions/attentions",
-    "baisi-pages/goods/goods",
-    "baisi-pages/mes/me",
     "baisi-pages/tologin/tologin",
     "baisi-pages/index/link/link",
     "baisi-pages/common/mainTab/mainTab",
     "baisi-pages/index/details/detail",
-    "baisi-pages/common/detail_dis/de_discuss"
+    "baisi-pages/common/detail_dis/de_discuss",
+    "baisi-pages/common/goodsLeft/goodleft",
+    "baisi-pages/common/goodsRight/goodright"
   ],
   "window": {
     "navigationBarBackgroundColor": "#d4237a",

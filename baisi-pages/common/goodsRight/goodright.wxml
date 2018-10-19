@@ -1,0 +1,12 @@
+<template name="goodright_Template">
+<view class='item' wx:for="{{rightList}}" wx:key="{{index}}">
+<view class='avabar'>
+<image src='{{item.header}}' mode='aspectFit'></image>
+</view>
+<view class='content'>
+<text class='name'>{{item.screen_name}}</text>
+<text class='fans'>{{item.fans_count}}人关注</text>
+</view>
+<button>关注</button>
+</view>
+</template>

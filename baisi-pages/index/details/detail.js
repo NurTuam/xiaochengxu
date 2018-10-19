@@ -12,6 +12,9 @@ Page({
   },
   // 刷新信息
   refreshNewData:function(){
+    wx.showLoading({
+      title: "请稍后"
+    });
     var that=this;
          wx.request({
            url: `http://api.budejie.com/api/api_open.php?a=dataList&c=comment&data_id=${data_id}&hot=1`,
@@ -19,8 +22,12 @@ Page({
             //  console.log(res.data)
              that.setData({
                dataList:res.data.data,
-               hotList: res.data.hot               
+               hotList: res.data.hot,
+               hot_hidden:res.data.hot.length?false:true              
              })
+           },
+           complete:function(){
+             wx.hideLoading()
            }
          })
   },

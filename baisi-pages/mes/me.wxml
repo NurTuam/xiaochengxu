@@ -1,2 +1,17 @@
-<!--baisi-pages/mes/me.wxml-->
-<text>baisi-pages/mes/me.wxml</text>
+<view class="cell">
+<image class='meimg' src='../../images/me/我的-F.png'></image>
+<text>登录/注册</text>
+<text class='d_right'>></text>
+</view>
+<view class='cell'>
+<image class='{{isplaying?"music":"music pause"}}' src='../../images/me/音乐.png'></image>
+<text bindtap='randomplaysong'>切换背景音乐</text>
+<image class='right_arrow' src='../../images/me/暂停.png' wx:if="{{isplaying}}" bindtap='musicStateChange'></image>
+<image class='right_arrow' src='../../images/me/播放.png' wx:if="{{!isplaying}}" bindtap='musicStateChange'></image>
+</view>
+<view style='background:white;'>
+<view class='menu_item' wx:for="{{menu}}" wx:key="{{index}}">
+<image src='{{item.icon}}'></image>
+<text>{{item.name}}</text>
+</view>
+</view>

@@ -1,0 +1,24 @@
+.left_cell{
+  height:90rpx;
+  border-bottom:3rpx solid #f8f7f7;
+
+}
+.left_arrow{
+  background-color: #f1f1f1 ;
+  width: 6rpx;
+  display: inline-block;  
+  height: 100%;
+  vertical-align: middle;
+}
+.item_title{
+  color: #777777;
+  margin-left: 24rpx;
+  font-size: 30rpx;
+  /* height: 100%; */
+}
+.left_cell_selected .left_arrow{
+  background-color: #ff3b30;
+}
+.left_cell_selected .item_title{
+  color: #e42e16;
+}

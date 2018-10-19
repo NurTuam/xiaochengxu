@@ -1,1 +1,70 @@
-/* baisi-pages/mes/me.wxss */
+.cell{
+   margin: 30rpx 0;
+  background-color: white;
+  height: 92rpx;
+  border: 1rpx  solid #bcbcbc;
+  border-left: 0;
+  border-right: 0;
+}
+.cell .music,.cell .meimg{
+  display: inline-block;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+.cell text{
+  font-size: 31rpx;
+  color: #666666;
+  margin-left: 20rpx;
+  line-height: 92rpx;
+  display: inline-block;
+  height: 100%;
+}
+.cell .d_right{
+  float: right;
+  margin-right: 20rpx;
+}
+.right_arrow{
+  display: block;
+  float: right;
+  margin-right: 10rpx;
+  width:50rpx;
+  height: 50rpx;
+  margin-top: 22rpx;
+}
+.menu_item{
+  background-color: white;
+  display: inline-block;
+  width: 24.2%;
+  height: 200rpx;
+  border-bottom: 1rpx solid #f1f0f0;
+  border-left: 1rpx solid #f1f0f0;
+  padding: 2.33rpx;
+}
+.menu_item image{
+  height: 55%;
+  width: 120rpx;
+  display: block;
+  margin: 20rpx auto;
+}
+.menu_item text{
+  display: block;
+  color: #666666;
+  font-size: 31rpx;
+  text-align: center;
+}
+.music{
+   animation: rotate 2s linear infinite;
+}
+.pause{
+  animation-play-state: paused;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}

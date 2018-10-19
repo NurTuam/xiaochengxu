@@ -1,5 +1,17 @@
 <import src="../../common/detail_dis/de_discuss.wxml" />
 
-<template is="detail_template" data="{{item:dataList[0]}}"/>
+<scroll-view class='srollview' scroll-y="{{true}}">
+<view class='container hot_discuss' wx:if="{{!hot_hidden}}">
+<text class='comment_text'>最热评论</text>
+<template is="detail_template" data="{{item:hotList[0]}}"/>
+<view class='divide_view'></view>
+</view>
+<view class='newcomment'>
+<text class='comment_text'>最新评论</text>
+<block wx:for="{{dataList}}" wx:key="{{index}}">
+  <template is="detail_template" data="{{item:item}}"/>
+</block>
+</view>
+</scroll-view>
 
 
