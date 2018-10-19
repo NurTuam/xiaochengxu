@@ -1,0 +1,9 @@
+<view class="container">
+<image class="avabar" src="{{avatarUrl}}"></image>
+<text class="hello" >Hello,{{nickName}}</text>
+<view class="journey" bindtap="onTap">
+<text class="journey_t">开启你的小程序之旅</text>
+</view>
+</view>
+
+

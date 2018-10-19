@@ -1,0 +1,20 @@
+.hot_discuss{
+  display:block;
+  height:68rpx;
+  font-size:26rpx;
+  color:#888888;
+  line-height:68rpx;
+  margin-left:15rpx;
+}
+.discuss_content{
+  border-bottom:1rpx solid #f2f2f2;
+}
+.userimg{
+  width:62rpx;
+  height:62rpx;
+  border-radius:31rpx;
+  display:inline-block;
+  vertical-align:middle;
+  margin-left:15rpx;
+  margin-top:15rpx;
+}

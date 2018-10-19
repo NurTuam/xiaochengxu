@@ -1,0 +1,38 @@
+page{
+background: orange;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: orange;
+  margin-top:100rpx;
+}
+.avabar{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 180rpx;
+  display: block;
+  border-radius: 150rpx;
+
+}
+.hello{
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;                                        
+}
+.journey{
+  margin-top: 200rpx;
+  border: 1px solid #fff;
+  width: 270rpx;
+  height: 80rpx;
+  border-radius: 15rpx;
+  text-align: center;
+}
+.journey_t{
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #fff;
+}

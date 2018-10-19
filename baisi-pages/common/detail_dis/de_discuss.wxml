@@ -1,0 +1,25 @@
+<template name="detail_template">
+<view class='common_li'>
+<!-- 第一 -->
+  <text class='hot_discuss'>最热评论</text>
+  <view class='discuss_content'>
+  <view class='user'>
+  <image src='{{item.user.profile_image}}' class='userimg'></image>
+  <text class='username'>{{item.user.username}}</text>
+  <view class='is_good'>
+  <text>{{item.user.total_cmt_like_count}}</text>
+  <image src='../../../images/index/good.png'></image>
+  </view>
+  </view>
+  <!-- 第二 -->
+  <view>
+  <view class='is_good_count'>
+  <text>{{item.user.total_cmt_like_count}}</text>
+  </view>
+  <view class='content_text'>
+     <text>{{item.content}}</text>
+  </view>
+  </view>
+  </view>
+</view>
+</template>

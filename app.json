@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "baisi-pages/index/index",
+    "baisi-pages/welcome/welcome",
+    "baisi-pages/attentions/attentions",
+    "baisi-pages/goods/goods",
+    "baisi-pages/mes/me",
+    "baisi-pages/tologin/tologin",
+    "baisi-pages/index/link/link",
+    "baisi-pages/common/mainTab/mainTab",
+    "baisi-pages/index/details/detail",
+    "baisi-pages/common/detail_dis/de_discuss"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#d4237a",
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#d4237a",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "baisi-pages/index/index",
+        "text": "精华",
+        "iconPath": "images/icon/main.png",
+        "selectedIconPath": "images/icon/main_t.png"
+      },
+      {
+        "pagePath": "baisi-pages/goods/goods",
+        "text": "关注",
+        "iconPath": "images/icon/care.png",
+        "selectedIconPath": "images/icon/care_t.png"
+      },
+      {
+        "pagePath": "baisi-pages/attentions/attentions",
+        "text": "推荐",
+        "iconPath": "images/icon/command.png",
+        "selectedIconPath": "images/icon/command_t.png"
+      },
+      {
+        "pagePath": "baisi-pages/mes/me",
+        "text": "我",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/me_t.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}

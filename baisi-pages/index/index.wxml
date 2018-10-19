@@ -1,0 +1,12 @@
+<import src="../common/mainTab/mainTab.wxml" />
+<view class='mainTab_nav' bindtap='tabTap'>
+<view wx:for="{{tab}}" wx:key="{{index}}" class="{{index==currentIndex?'tabItem active':'tabItem'}}" data-type="{{item.type}}" data-index='{{index}}'>{{item.name}}</view>
+</view>
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" interval='3000' bindtap='swiperTap'>
+<swiper-item wx:for="{{slider}}" wx:key="{{index}}">
+<image src="{{item.picUrl}}" data-link="{{item.linkUrl}}"></image>
+</swiper-item>
+</swiper>
+<block wx:for="{{list}}" wx:key="{{index}}">
+  <template is="mainTab_Template" data="{{item:item,commentTap:commentTap}}" />
+</block>

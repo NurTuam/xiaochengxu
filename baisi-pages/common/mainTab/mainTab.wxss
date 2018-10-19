@@ -1,0 +1,88 @@
+.mainTab{
+  background: white;
+  margin: 12rpx;
+  border:1rpx solid #dddcdc;
+}
+.Tab_top{
+ display:block;
+ overflow: hidden;
+}
+.avabar{
+  display:inline-block;
+  vertical-align:middle;
+  width:60rpx;
+  height:60rpx;
+  margin-left:14rpx;
+  margin-top:14rpx;
+
+}
+.title_time{
+  flex-direction:column;
+  display:inline-block;
+  margin-left:14rpx;
+  margin-top:12rpx;
+  vertical-align:middle;
+  padding:0;
+  color:#454545;
+
+}
+.title{
+  display:block;
+  font-size:24rpx;
+  margin-bottom:10rpx;
+
+}
+.time{
+  display:block;
+  font-size:18rpx;
+}
+.more{
+  width:60rpx;
+  height:60rpx;
+  float:right;
+  display: block;
+  margin-right: 10rpx;
+}
+.Tab_content{
+  margin: 20rpx 14rpx;
+}
+.content_text{
+  font-size: 30rpx;
+  display: block;
+  line-height: 40rpx;
+  margin-bottom: 14rpx;
+  color: #333;
+}
+.content_text image,.content_text video,.content_text voice{
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 70%;
+  display: block;
+}
+.Tab_bottom{
+  border-top:1rpx solid #f8f7f7;
+  overflow: hidden;
+  display:flex;
+}
+.Tab_bottom_item{
+  flex: 1;
+  overflow: hidden;
+  text-align: center;
+  height: 45rpx;
+  padding-top:10rpx;
+  padding-bottom: 20rpx;
+}
+.Tab_bottom_item image{
+  display: inline-block;
+  width: 45rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  vertical-align: middle;
+}
+.Tab_bottom_item text{
+  display: inline-block;
+  font-size: 23rpx;
+  line-height: 45rpx;
+  vertical-align: middle;
+  margin-left: 6rpx;
+}

@@ -1,0 +1,2 @@
+<web-view src="{{linkUrl}}"></web-view>
+ 

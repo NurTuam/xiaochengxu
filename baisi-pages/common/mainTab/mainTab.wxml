@@ -1,0 +1,44 @@
+<template name="mainTab_Template">
+<view class='mainTab'>
+<!-- 顶部 -->
+<view class='Tab_top'>
+<image src='{{item.profile_image}}' class='avabar'></image>
+<view class='title_time'>
+<text class='title'>{{item.name}}</text>
+<text class='time'>{{item.create_time}}</text>
+</view>
+<image src='../../images/index/more.png' class='more'></image>
+</view>
+<!-- 内容 -->
+<view class='Tab_content'>
+<text class='content_text'>{{item.text}}</text>
+<image src='{{item.image0}}' wx:if="{{item.image0&&(!item.videouri)&&((!item.voiceuri))}}" mode='aspectFit'></image>
+<video src='{{item.videouri}}' wx:if="{{item.videouri}}"></video>
+<voice src='{{item.voiceuri}}' wx:if="{{item.voiceuri}}"></voice>
+</view>
+<!-- 底部 -->
+<view class='Tab_bottom'>
+  <!-- 顶 -->
+  <view class='Tab_bottom_item'>
+  <image src="../../images/index/good.png"></image>
+  <text>{{item.love}}</text>
+  </view>
+  <!-- 踩 -->
+  <view class='Tab_bottom_item'>
+  <image src='../../images/index/don.png'></image>
+  <text>{{item.hate}}</text>
+  </view>
+  <!-- 评论 -->
+  <view class='Tab_bottom_item' bindtap='commentTap' data-id="{{item.id}}">
+  <image src='../../images/index/discuss.png'></image>
+  <text>{{item.comment}}</text>
+  </view>
+  <!-- 转发 -->
+  <view class='Tab_bottom_item'>
+  <image src='../../images/index/c_send.png'></image>
+  <text>{{item.repost}}</text>
+  </view>
+</view>
+</view>
+
+</template>

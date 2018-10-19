@@ -1,0 +1,5 @@
+<import src="../../common/detail_dis/de_discuss.wxml" />
+
+<template is="detail_template" data="{{item:dataList[0]}}"/>
+
+
